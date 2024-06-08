@@ -3,6 +3,7 @@ const messageModel = require("../model/messageModel");
 module.exports.addMessage = async (req, res, next) => {
     try {
         const {from, to, message} = req.body;
+        console.log(from, to);
         const data = await messageModel.create({
             message: { text: message},
             users: [from, to],
@@ -13,7 +14,7 @@ module.exports.addMessage = async (req, res, next) => {
     } catch (error) {
         next(error);
     }
-};
+}; 
 
 
 module.exports.getAllMessage = async (req, res, next) => {

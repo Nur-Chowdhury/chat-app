@@ -12,7 +12,7 @@ module.exports.register = async (req, res, next) => {
         const user = await User.create({
             name,
             username, 
-            email, 
+            email,  
             password: hashedPassword,
         });
         delete user.password;

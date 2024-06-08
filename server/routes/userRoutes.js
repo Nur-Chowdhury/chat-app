@@ -7,4 +7,4 @@ router.post("/login", login);
 router.post("/avatar/:id", avatar);
 router.get('/allusers/:id', getAllUsers);
 
-module.exports = router;
+module.exports = router; 
