@@ -12,7 +12,7 @@ require("dotenv").config();
 
 app.use(cors(
     {
-        origin: ["https://deploy-mern-1whq.vercel.app"],
+        origin: ["https://chat-app-8j6t.vercel.app/"],
         methods: ["POST", "GET"],
         credentials: true
     }
